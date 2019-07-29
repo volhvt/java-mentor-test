@@ -72,12 +72,11 @@ abstract class Calculator<T> {
                     System.out.println("part " + i + " : " + m.group(i));
                 }*/
                 RomanCalculator c = new RomanCalculator();
-                return c.init(m.group(1)).addition(m.group(3)).getValue();
-                /*return c.calc(
+                return c.calc(
                         m.group(1),
                         m.group(3),
                         m.group(2).charAt(0)
-                ).getValue();*/
+                ).getValue();
             }
         }
         throw new IllegalArgumentException(s + " - illegal format of expression");
